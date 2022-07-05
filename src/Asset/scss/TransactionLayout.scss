@@ -1,0 +1,539 @@
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../Font/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(../Font/Lato-Bold.ttf);
+}
+
+$fontFamily-Lato-Regular: "Lato-Regular", sans-serif;
+$fontFamily-Lato-Bold: "Lato-Bold", sans-serif;
+
+body {
+    background-color: #f0f1f2;
+    // display: flex;
+    // justify-content: center;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.css-tj5bde-Svg {
+    color: #fd6542 !important;
+}
+
+.txnList-Layout {
+  background-color: #f0f1f2;
+}
+
+.modal-txnList {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal-content-txnList {
+  background-color: #f0f1f2;
+  position: relative;
+  max-width: 480px;
+  min-width: 480px;
+  margin: auto;
+  border: none;
+  box-shadow: 4px 0 4px -4px rgba(0, 0, 0, 0.1), -4px 0 4px -4px rgba(0, 0, 0, 0.1);
+  padding: 0px 0px 32px 0px;
+}
+
+.txnList-Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f1f2;
+  margin-top: 14px;
+}
+
+.txnList-Content {
+  margin-bottom: 10px;
+  width: 96%;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.txnList-transaction-content {
+  padding: 15px 20px 15px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.txnList-transaction-topSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.txnList-content-paymentstatus {
+  font-family: $fontFamily-Lato-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+  text-transform: capitalize;
+  color: #767676;
+  margin-bottom: 8px;
+}
+
+.txnList-content-description {
+  font-family: $fontFamily-Lato-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+  text-transform: capitalize;
+  color: #111111;
+  margin-bottom: 0px;
+}
+
+.txnList-content-paymentinfo {
+  font-family: $fontFamily-Lato-Bold;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 15px;
+  text-transform: capitalize;
+  // color: #4BB7AC;
+  margin-bottom: 8px;
+}
+
+$font768size: 13px;
+//   @media (max-width: 768px) {
+//     .status-cartmanual-Layout {
+//       width: 100vw;
+//       // padding: 34px 15px 15px 19px;
+//     }
+  
+//     .status-cartmanual-Title {
+//       display: none;
+//     }
+  
+//     .modal-header-status-cartmanual {
+//       margin-bottom: 32px;
+//     }
+  
+//     .menu-title-status-cartmanual {
+//       font-size: 20px;
+//     }
+  
+//     .status-cartmanual-filter {
+//       padding: 5px 10px;
+//       margin-bottom: 22px;
+//       width: fit-content;
+//     }
+    
+//     .status-cartmanual-filterName {
+//       margin-right: 15px;
+//     }
+    
+//     .status-cartmanual-arrowDown {
+//       width: 18px;
+//       height: 10px;
+//     }
+  
+//     .status-cartmanualContent {
+//       min-width: 381px;
+//       max-width: 381px;
+//       margin-bottom: 18px;
+//     }
+  
+//     .status-cartmanual-transaction-header {
+//       height: 32px;
+//       padding: 0px 12px 0px 12px;
+//     }
+  
+//     .status-cartmanual-transaction-title {
+//       font-size: 17px;
+//     }
+  
+//     .status-cartmanual-transaction-content {
+//       padding: 15px 15px 15px 15px;
+//     }
+  
+//     .status-cartmanual-transaction-merchName {
+//       font-size: 17px;
+//       font-weight: 100;
+//       margin-bottom: 6px;
+//       max-width: 200px;
+//     }
+  
+//     .status-cartmanual-transaction-timeTrans {
+//       font-size: $font768size;
+//     }
+  
+//     .status-cartmanual-transaction-centerSide {
+//       font-size: $font768size;
+//     }
+  
+//     .status-cartmanual-foodService-words,
+//     .status-cartmanual-paymentService-words {
+//       font-size: $font768size;
+//       padding-top: 4px;
+//     }
+//   }
+  
+//   @media (max-width: 380px) {
+//     .status-cartmanual-Layout {
+//       width: 100vw;
+//       // padding: 30px 10px 15px 10px;
+//     }
+  
+//     .status-cartmanual-Content {
+//       min-width: 350px;
+//       max-width: 350px;
+//       margin-bottom: 16px;
+//     }
+//   }
+  
+//   $font325size: 11px;
+//   @media (max-width: 325px) {
+//     .status-cartmanual-Layout {
+//       width: 100vw;
+//       // padding: 26px 10px 15px 10px;
+//     }
+  
+//     .status-cartmanual-Content {
+//       min-width: 290px;
+//       max-width: 290px;
+//       margin-bottom: 14px;
+//     }
+  
+//     .status-cartmanual-transaction-title {
+//       font-size: 13px;
+//     }
+  
+//     .status-cartmanual-transaction-content {
+//       padding: 12px 12px 12px 12px;
+//     }
+  
+//     .status-cartmanual-transaction-merchName {
+//       font-size: $font325size;
+//       margin-bottom: 4px;
+//       max-width: 160px;
+//     }
+  
+//     .status-cartmanual-transaction-timeTrans {
+//       font-size: $font325size;
+//     }
+  
+//     .status-cartmanual-transaction-centerSide {
+//       font-size: $font325size;
+//     }
+  
+//     .status-cartmanual-foodService-words,
+//     .status-cartmanual-paymentService-words {
+//       font-size: $font325size;
+//       padding-top: 4px;
+//     }
+// }
+  
+
+.txnList-checkbutton {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background-color: #4056C6;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.txnList-textbox {
+    background: url(../Icon/search.png) no-repeat scroll 7px 7px;
+    background-size: 23px;
+    width: 100%;
+    padding: 7px 7px 7px 35px;
+    border: 1px solid #CFCCCC;
+    border-radius: 8px;
+    outline: none;
+    height: 25px;
+}
+
+.txnList-inputarea {
+    display: flex;
+    padding: 0px 10px 14px 10px;
+    background-color: #ffffff;
+}
+
+.txnList-header {
+  display: flex;
+  flex-direction: row;
+  padding: 14px 10px 14px 10px;
+  background-color: #FFFFFF !important;
+}
+
+.txnList-titletext {
+  font-family: $fontFamily-Lato-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #111111;
+  margin-left: 16px;
+}
+
+.txnList-paymentservice-words {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #111111;
+    margin: 0px;
+}
+
+.txnList-status-filter {
+  width: 100%;
+  background-color: #ffffff;
+  padding-bottom: 13px;
+  display: flex;
+}
+
+.txnList-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #CFCCCC;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 5px 13px;
+  margin-left: 10px;
+  cursor: pointer;
+  width: fit-content;
+  background-color: #ffffff;
+  height: 38px;
+}
+
+.txnList-filter-content {
+  display: flex;
+  cursor: pointer;
+}
+
+// .txnList-filter input[type="checkbox"] {
+//   display: none;
+// }
+
+// .txnList-filter input[type="checkbox"]:checked + span {
+//   border-color: #4056C6;
+// }
+
+// .txnList-filter input[type="checkbox"]:checked + span .txnList-filter-content .txnList-filterName {
+//   color: #4056C6;
+// }
+
+.txnList-filterName {
+  font-size: 15px;
+  font-family: $fontFamily-Lato-Regular;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  color: #111111;
+  margin-right: 5px;
+}
+
+.txnList-filterArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txnList-arrowDown {
+  width: 18px;
+}
+
+.txnList-dateselection-layout {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 13px 13px 10px;
+  background-color: #ffffff;
+}
+
+.txnList-dateselection-start {
+  width: 50%;
+}
+
+.txnList-datepicker-start {
+  margin-right: 10px !important;
+}
+
+.txnList-sort-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding-bottom: 13px;
+  display: flex;
+}
+
+.txnList-sort-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #CFCCCC;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 5px 13px;
+  margin-left: 10px;
+  cursor: pointer;
+  width: fit-content;
+  height: 40px;
+  background-color: #ffffff;
+}
+
+.txnList-sort-content input[type="radio"] {
+  display: none;
+}
+
+.txnList-sort-content input[type="radio"]:checked + label {
+  border-color: #4056C6;
+}
+
+.txnList-sort-content input[type="radio"]:checked + label .txnList-sortName {
+  color: #4056C6;
+}
+
+.txnList-sortName {
+  font-size: 15px;
+  font-family: $fontFamily-Lato-Regular;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  color: #111111;
+  cursor: pointer;
+}
+
+// Transaction Detail
+
+.txnDetailLayout {
+  background-color: #f0f1f2;
+  width: 480px;
+}
+
+.txnDetail-header {
+  display: flex;
+  flex-direction: row;
+  padding: 14px 10px 14px 10px;
+  background-color: #FFFFFF !important;
+}
+
+.txnDetail-backicon {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.txnDetail-titletext {
+  font-family: $fontFamily-Lato-Bold;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  color: #111111;
+  margin-left: 16px;
+}
+
+.txnDetail-txnstatus-layout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 14px;
+  margin-top: 10px;
+}
+
+.txnDetail-txnstatus-Title {
+  font-family: $fontFamily-Lato-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #198754;
+}
+
+.txnDetail-txnstatus-Number{
+  font-family: $fontFamily-Lato-Bold;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 16px;
+  color: #198754;
+
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.txnDetailContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.txnDetail-LeftSide {
+  width: 100%;
+}
+
+.txnDetail-transaction-detail {
+  width: auto;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+.txnDetail-transaction-content {
+  padding: 10px 10px 10px 12px;
+}
+
+.txnDetail-transaction-descArea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: $fontFamily-Lato-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #767676;
+}
+
+.txnDetail-transaction-descArea-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: $fontFamily-Lato-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .modal-content-txnList {
+      min-width: 100vw;
+      max-width: 100vw;
+  }
+
+  .txnDetailLayout {
+    min-width: 100vw;
+    max-width: 100vw;
+  }
+}
